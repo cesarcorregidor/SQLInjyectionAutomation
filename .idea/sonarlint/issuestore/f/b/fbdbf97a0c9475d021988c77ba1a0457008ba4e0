@@ -1,0 +1,16 @@
+
+c	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ò´Ò¶
+N	java:S106$"9Replace this use of System.out or System.err by a logger.(Éáğè
+\
+java:S1128"ARemove this unused import 'net.thucydides.core.annotations.Step'.(†ëëùÿÿÿÿ
+d
+java:S1128"NRemove this unused import 'webgoat.puerto.iplocal.pageObjects.MainPageObject'.(®À„
+p
+java:S1128"URemove this unused import 'webgoat.puerto.iplocal.pageObjects.SQLAdvancedPageObject'.(¬ó•Ïşÿÿÿÿ
+F
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ
+F
+java:S1128	"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ
+P
+java:S1128
+":Remove this unused import 'java.util.concurrent.TimeUnit'.(Æ™ş

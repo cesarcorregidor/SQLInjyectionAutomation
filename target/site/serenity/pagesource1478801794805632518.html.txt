@@ -1,0 +1,94 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="/WebGoat/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/WebGoat/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/WebGoat/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/WebGoat/css/animate.css">
+</head>
+<body>
+<section id="container">
+    <header id="header">
+        <div class="brand">
+            <a href="/WebGoat/start.mvc" class="logo"><span>Web</span>Goat</a>
+        </div>
+        <div class="lessonTitle">
+        </div>
+
+    </header>
+    <section class="main-content-wrapper">
+
+        <section id="main-content">
+            <br><br>
+            <fieldset>
+                <legend>Register </legend>
+                <form class="form-horizontal" action="/WebGoat/register.mvc" method="POST">
+
+                    <div class="form-group">
+                        <label for="username" class="col-sm-2 control-label">Username</label>
+                        <div class="col-sm-4">
+                            <input autofocus="dummy_for_thymeleaf_parser" type="text" class="form-control" id="username" placeholder="Username" name="username" value="yasuol4lcm2vxl">
+                        </div>
+                        
+                    </div>
+                    <div class="form-group has-error">
+                        <label for="password" class="col-sm-2 control-label">Password</label>
+                        <div class="col-sm-4">
+                            <input type="password" class="form-control" id="password" placeholder="Password" name="password" value="pxw39fwixzkg">
+                        </div>
+                        <span>size must be between 6 and 10</span>
+                    </div>
+                    <div class="form-group has-error">
+                        <label for="matchingPassword" class="col-sm-2 control-label">Confirm password</label>
+                        <div class="col-sm-4">
+                            <input type="password" class="form-control" id="matchingPassword" placeholder="Password" name="matchingPassword" value="pxw39fwixzkg">
+                        </div>
+                        <span>size must be between 6 and 10</span>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Terms of use</label>
+                        <div class="col-sm-6">
+                            <div style="border: 1px solid #e5e5e5; height: 200px; overflow: auto; padding: 10px;">
+                                <p>
+                                    While running this program your machine will be extremely
+                                    vulnerable to attack. You should disconnect from the Internet while using
+                                    this program. WebGoat's default configuration binds to localhost to minimize
+                                    the exposure.
+                                </p>
+                                <p>
+                                    This program is for educational purposes only. If you attempt
+                                    these techniques without authorization, you are very likely to get caught. If
+                                    you are caught engaging in unauthorized hacking, most companies will fire you.
+                                    Claiming that you were doing security research will not work as that is the
+                                    first thing that all hackers claim.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-6 col-sm-offset-2">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="agree" value="agree">Agree with the terms and
+                                    conditions
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-6">
+                            <button type="submit" class="btn btn-primary">Sign up</button>
+                        </div>
+                    </div>
+                </form>
+            </fieldset>
+        </section>
+    </section>
+</section>
+
+
+
+</body></html>

@@ -1,0 +1,10 @@
+
+`	java:S112
+"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
+h
+java:S2184"FCast one of the operands of this multiplication operation to a "long".(ç·øÿÿÿÿ8ˆÓ¿àå0
+n
+java:S1223"LRename this method to prevent any misunderstanding or make it a constructor.(«ñ³ıÿÿÿÿ8†Ä¾àå0
+h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«ñ³ıÿÿÿÿ
+t
+java:S2142	"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€

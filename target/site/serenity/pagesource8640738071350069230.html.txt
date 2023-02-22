@@ -1,0 +1,279 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-store">
+
+    <!--  CSS -->
+    <link rel="shortcut icon" href="/WebGoat/images/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" type="text/css" href="/WebGoat/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/WebGoat/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/WebGoat/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/WebGoat/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="/WebGoat/css/coderay.css">
+    <link rel="stylesheet" type="text/css" href="/WebGoat/css/lessons.css">
+<!--    <link rel="stylesheet" type="text/css" th:href="@{/css/asciidoctor-default.css}"/>-->
+
+    <!--  end of CSS -->
+
+    <!-- JS -->
+    <!-- <script src="js/modernizr.min.js"></script>-->
+
+    <!-- Require.js used to load js asynchronously -->
+    <script src="js/libs/require.min.js" data-main="js/main"></script>
+    <meta http-equiv="Content-Type" content="text/id; charset=ISO-8859-1">
+    <title>WebGoat</title>
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="main" src="js/main.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery" src="js/libs/jquery.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="libs/jquery-base" src="js/libs/jquery-base.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="libs/jquery-vuln" src="js/libs/jquery-vuln.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="goatApp/goatApp" src="js/goatApp/goatApp.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="underscore" src="js/libs/underscore-min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="/WebGoat/js/libs/jquery.min.js" src="/WebGoat/js/libs/jquery.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="bootstrap" src="js/libs/bootstrap.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jqueryui" src="js/libs/jquery-ui.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="/WebGoat/js/libs/jquery-2.1.4.min.js" src="/WebGoat/js/libs/jquery-2.1.4.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="polyglot" src="js/libs/polyglot.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="goatApp/view/GoatRouter" src="js/goatApp/view/GoatRouter.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="goatApp/support/goatAsyncErrorHandler" src="js/goatApp/support/goatAsyncErrorHandler.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jqueryuivuln" src="js/libs/jquery-ui-1.10.4.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="goatApp/controller/LessonController" src="js/goatApp/controller/LessonController.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="goatApp/controller/MenuController" src="js/goatApp/controller/MenuController.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="goatApp/view/LessonContentView" src="js/goatApp/view/LessonContentView.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="goatApp/view/MenuView" src="js/goatApp/view/MenuView.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="goatApp/view/TitleView" src="js/goatApp/view/TitleView.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="backbone" src="js/libs/backbone-min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="goatApp/model/LessonContentModel" src="js/goatApp/model/LessonContentModel.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="goatApp/view/HintView" src="js/goatApp/view/HintView.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="goatApp/view/HelpControlsView" src="js/goatApp/view/HelpControlsView.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="goatApp/support/GoatUtils" src="js/goatApp/support/GoatUtils.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="goatApp/view/UserAndInfoView" src="js/goatApp/view/UserAndInfoView.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="goatApp/view/MenuButtonView" src="js/goatApp/view/MenuButtonView.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="goatApp/model/LessonInfoModel" src="js/goatApp/model/LessonInfoModel.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="libs/jquery.form" src="js/libs/jquery.form.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="goatApp/view/ErrorNotificationView" src="js/goatApp/view/ErrorNotificationView.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="goatApp/view/PaginationControlView" src="js/goatApp/view/PaginationControlView.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="goatApp/model/MenuCollection" src="js/goatApp/model/MenuCollection.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="goatApp/view/MenuItemView" src="js/goatApp/view/MenuItemView.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="goatApp/model/HintCollection" src="js/goatApp/model/HintCollection.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="goatApp/model/HTMLContentModel" src="js/goatApp/model/HTMLContentModel.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="goatApp/model/LessonOverviewCollection" src="js/goatApp/model/LessonOverviewCollection.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="text" src="js/libs/text.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="goatApp/model/MenuModel" src="js/goatApp/model/MenuModel.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="goatApp/model/AssignmentStatusModel" src="js/goatApp/model/AssignmentStatusModel.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="goatApp/model/HintModel" src="js/goatApp/model/HintModel.js"></script></head>
+<body>
+
+<section id="container">
+    <header id="header">
+        <!--logo start-->
+        <div class="brand">
+            <a href="/WebGoat/welcome.mvc" class="logo"><span>Web</span>Goat</a>
+        </div>
+        <!--logo end-->
+        <div id="lesson-title-wrapper">
+
+        </div><!--lesson title end-->
+        <div class="user-nav pull-right" id="user-and-info-nav" style="margin-right: 75px;">
+            <div class="dropdown" style="display:inline">
+                <button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle" id="user-menu">
+                    <i class="fa fa-user"></i> <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-left">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/WebGoat/logout">Logout</a></li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation" class="disabled"><a role="menuitem" tabindex="-1" href="#">User: <span>aerodactyl29e6hmps7a0g</span></a>
+                    </li>
+                    <li role="presentation" class="disabled"><a role="menuitem" tabindex="-1" href="#">Role:
+                        <span>User</span>
+                        
+                    </a>
+                    </li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation" class="disabled"><a role="menuitem" tabindex="-1" href="#">
+                        <span>Version</span><span>: </span>
+                        <span>8.2.2</span></a>
+                    </li>
+                    <li role="presentation" class="disabled"><a role="menuitem" tabindex="-1" href="#">
+                        <span>Build</span><span>: </span>
+                        <span></span></a></li>
+                </ul>
+            </div>
+            <div style="display:inline" id="settings">
+                <!--<button type="button" id="admin-button" class="btn btn-default right_nav_button" title="Administrator">-->
+                <!--<i class="fa fa-cog"></i>-->
+                <!--</button>-->
+                <a href="#reportCard">
+                    <button type="button" id="report-card-button" class="btn btn-default right_nav_button button-up" title="Report card">
+                       <i class="fa fa-bar-chart-o"></i>
+                    </button>
+                </a>
+                <!--<button type="button" id="user-management" class="btn btn-default right_nav_button"-->
+                <!--title="User management">-->
+                <!--<i class="fa fa-users"></i>-->
+                <!--</button>-->
+            </div>
+            <button type="button" id="about-button" class="btn btn-default right_nav_button" title="About WebGoat" data-toggle="modal" data-target="#about-modal">
+                <i class="fa fa-info"></i>
+            </button>
+            <a href="mailto:webgoat@owasp.org?Subject=Webgoat%20feedback" target="_top">
+                <button type="button" class="btn btn-default right_nav_button" data-toggle="tooltip" title="Contact Us">
+                    <i class="fa fa-envelope"></i>
+                </button>
+            </a>
+
+
+        </div>
+    </header>
+
+    <aside class="sidebar">
+        <div id="menu-container"><ul class="nano-content"><li class="sub-menu ng-scope"><a category="Introduction"><i class="fa fa-angle-right pull-right"></i><span>Introduction</span></a><ul class="slideDown lessonsAndStages" id="Introduction"><li class="lesson"><a href="#lesson/WebGoatIntroduction.lesson" id="Introduction-WebGoat">WebGoat</a><span class="glyphicon glyphicon-check lesson-complete"></span></li><li class="lesson"><a href="#lesson/WebWolfIntroduction.lesson" id="Introduction-WebWolf">WebWolf</a></li></ul></li><li class="sub-menu ng-scope"><a category="General"><i class="fa fa-angle-right pull-right"></i><span>General</span></a><ul class="slideDown lessonsAndStages" id="General"><li class="lesson"><a href="#lesson/HttpBasics.lesson" id="General-HTTPBasics">HTTP Basics</a></li><li class="lesson"><a href="#lesson/HttpProxies.lesson" id="General-HTTPProxies">HTTP Proxies</a></li><li class="lesson"><a href="#lesson/ChromeDevTools.lesson" id="General-DeveloperTools">Developer Tools</a></li><li class="lesson"><a href="#lesson/CIA.lesson" id="General-CIATriad">CIA Triad</a></li><li class="lesson"><a href="#lesson/Crypto.lesson" id="General-CryptoBasics">Crypto Basics</a></li><li class="lesson"><a href="#lesson/LessonTemplate.lesson" id="General-Writingnewlesson">Writing new lesson</a></li></ul></li><li class="sub-menu ng-scope"><a category="A1Injection"><i class="fa fa-angle-right pull-right"></i><span>(A1) Injection</span></a><ul class="slideDown lessonsAndStages" id="A1Injection"><li class="lesson"><a href="#lesson/SqlInjection.lesson" id="A1Injection-SQLInjectionintro">SQL Injection (intro)</a></li><li class="lesson"><a href="#lesson/SqlInjectionAdvanced.lesson" id="A1Injection-SQLInjectionadvanced">SQL Injection (advanced)</a></li><li class="lesson"><a href="#lesson/SqlInjectionMitigations.lesson" id="A1Injection-SQLInjectionmitigation">SQL Injection (mitigation)</a></li><li class="lesson"><a href="#lesson/PathTraversal.lesson" id="A1Injection-Pathtraversal">Path traversal</a></li></ul></li><li class="sub-menu ng-scope"><a category="A2BrokenAuthentication"><i class="fa fa-angle-right pull-right"></i><span>(A2) Broken Authentication</span></a><ul class="slideDown lessonsAndStages" id="A2BrokenAuthentication"><li class="lesson"><a href="#lesson/AuthBypass.lesson" id="A2BrokenAuthentication-AuthenticationBypasses">Authentication Bypasses</a></li><li class="lesson"><a href="#lesson/JWT.lesson" id="A2BrokenAuthentication-JWTtokens">JWT tokens</a></li><li class="lesson"><a href="#lesson/PasswordReset.lesson" id="A2BrokenAuthentication-Passwordreset">Password reset</a></li><li class="lesson"><a href="#lesson/SecurePasswords.lesson" id="A2BrokenAuthentication-SecurePasswords">Secure Passwords</a></li></ul></li><li class="sub-menu ng-scope"><a category="A3SensitiveDataExposure"><i class="fa fa-angle-right pull-right"></i><span>(A3) Sensitive Data Exposure</span></a><ul class="slideDown lessonsAndStages" id="A3SensitiveDataExposure"><li class="lesson"><a href="#lesson/InsecureLogin.lesson" id="A3SensitiveDataExposure-InsecureLogin">Insecure Login</a></li></ul></li><li class="sub-menu ng-scope"><a category="A4XMLExternalEntitiesXXE"><i class="fa fa-angle-right pull-right"></i><span>(A4) XML External Entities (XXE)</span></a><ul class="slideDown lessonsAndStages" id="A4XMLExternalEntitiesXXE"><li class="lesson"><a href="#lesson/XXE.lesson" id="A4XMLExternalEntitiesXXE-XXE">XXE</a></li></ul></li><li class="sub-menu ng-scope"><a category="A5BrokenAccessControl"><i class="fa fa-angle-right pull-right"></i><span>(A5) Broken Access Control</span></a><ul class="slideDown lessonsAndStages" id="A5BrokenAccessControl"><li class="lesson"><a href="#lesson/IDOR.lesson" id="A5BrokenAccessControl-InsecureDirectObjectReferences">Insecure Direct Object References</a></li><li class="lesson"><a href="#lesson/MissingFunctionAC.lesson" id="A5BrokenAccessControl-MissingFunctionLevelAccessControl">Missing Function Level Access Control</a></li></ul></li><li class="sub-menu ng-scope"><a category="A7Cross-SiteScriptingXSS"><i class="fa fa-angle-right pull-right"></i><span>(A7) Cross-Site Scripting (XSS)</span></a><ul class="slideDown lessonsAndStages" id="A7Cross-SiteScriptingXSS"><li class="lesson"><a href="#lesson/CrossSiteScripting.lesson" id="A7Cross-SiteScriptingXSS-CrossSiteScripting">Cross Site Scripting</a></li></ul></li><li class="sub-menu ng-scope"><a category="A8InsecureDeserialization"><i class="fa fa-angle-right pull-right"></i><span>(A8) Insecure Deserialization</span></a><ul class="slideDown lessonsAndStages" id="A8InsecureDeserialization"><li class="lesson"><a href="#lesson/InsecureDeserialization.lesson" id="A8InsecureDeserialization-InsecureDeserialization">Insecure Deserialization</a></li></ul></li><li class="sub-menu ng-scope"><a category="A9VulnerableComponents"><i class="fa fa-angle-right pull-right"></i><span>(A9) Vulnerable Components</span></a><ul class="slideDown lessonsAndStages" id="A9VulnerableComponents"><li class="lesson"><a href="#lesson/VulnerableComponents.lesson" id="A9VulnerableComponents-VulnerableComponents">Vulnerable Components</a></li></ul></li><li class="sub-menu ng-scope"><a category="A82013RequestForgeries"><i class="fa fa-angle-right pull-right"></i><span>(A8:2013) Request Forgeries</span></a><ul class="slideDown lessonsAndStages" id="A82013RequestForgeries"><li class="lesson"><a href="#lesson/CSRF.lesson" id="A82013RequestForgeries-Cross-SiteRequestForgeries">Cross-Site Request Forgeries</a></li><li class="lesson"><a href="#lesson/SSRF.lesson" id="A82013RequestForgeries-Server-SideRequestForgery">Server-Side Request Forgery</a></li></ul></li><li class="sub-menu ng-scope"><a category="Clientside"><i class="fa fa-angle-right pull-right"></i><span>Client side</span></a><ul class="slideDown lessonsAndStages" id="Clientside"><li class="lesson"><a href="#lesson/BypassRestrictions.lesson" id="Clientside-Bypassfront-endrestrictions">Bypass front-end restrictions</a></li><li class="lesson"><a href="#lesson/ClientSideFiltering.lesson" id="Clientside-Clientsidefiltering">Client side filtering</a></li><li class="lesson"><a href="#lesson/HtmlTampering.lesson" id="Clientside-HTMLtampering">HTML tampering</a></li></ul></li><li class="sub-menu ng-scope"><a category="Challenges"><i class="fa fa-angle-right pull-right"></i><span>Challenges</span></a><ul class="slideDown lessonsAndStages" id="Challenges"><li class="lesson"><a href="#lesson/Challenge1.lesson" id="Challenges-Adminlostpassword">Admin lost password</a></li><li class="lesson"><a href="#lesson/Challenge5.lesson" id="Challenges-Withoutpassword">Without password</a></li><li class="lesson"><a href="#lesson/Challenge7.lesson" id="Challenges-Adminpasswordreset">Admin password reset</a></li><li class="lesson"><a href="#lesson/Challenge8.lesson" id="Challenges-Withoutaccount">Without account</a></li></ul></li></ul></div>
+    </aside>
+    <!--sidebar left end-->
+
+    <!--main content start-->
+    <section class="main-content-wrapper">
+        <section id="main-content">
+            <div id="lesson-page" class="pages" style="">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="col-md-12" align="left">
+                            <div id="lesson-content-wrapper" class="panel">
+                                <div class="" id="error-notification-container">
+                                    <div class="" id="error-notification">
+                                        <i class="fa fa-exclamation-circle"> There was an unexpected error. Please try
+                                            again.</i>
+                                    </div>
+                                </div>
+                                <div class="" id="help-controls">
+                                    <button class="btn btn-primary btn-xs btn-danger help-button" id="show-hints-button">Show hints</button>
+
+                                    <button class="btn btn-xs help-button" id="restart-lesson-button">Reset lesson</button>
+                                </div>
+
+                                <div class="lesson-hint" id="lesson-hint-container">
+                                    <!--<h4>Hints</h4>-->
+                                    <div class="panel">
+                                        <div id="message" class="info"></div>
+                                        <div class="panel-body" id="lesson-hint">
+                                            <span class="glyphicon-class glyphicon glyphicon-circle-arrow-left" id="show-prev-hint"></span>
+                                            <span class="glyphicon-class glyphicon glyphicon-circle-arrow-right" id="show-next-hint"></span>
+                                            <br>
+                                            <span id="lesson-hint-content"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="lesson-hint" id="lesson-overview-container">
+                                    <div class="panel">
+                                        <div class="panel-body" id="lesson-overview"></div>
+                                    </div>
+                                </div>
+                                <div id="lesson-page-controls">
+
+                                </div>
+
+                                <div class="lesson-content">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="report-card-page" class="pages" style="display: none;">
+            </div>
+        </section>
+    </section>
+
+</section>
+
+
+<!-- About WebGoat Modal -->
+<div class="modal" id="about-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 class="modal-title" id="myModalLabel">About WebGoat - Provided by the OWASP Foundation</h3>
+    </div>
+    <div class="modal-body modal-scroll">
+        <p>Thanks for hacking The Goat!</p>
+
+        <p>WebGoat is a demonstration of common web application flaws. The
+            associated exercises are intended to provide hands-on experience with
+            techniques aimed at demonstrating and testing application penetration.
+        </p>
+
+        <p>From the entire WebGoat team, we appreciate your interest and efforts
+            in making applications not just better, but safer and more secure for
+            everyone. We, as well as our sacrificial goat, thank you.</p>
+
+        <p>
+            Version: <span>8.2.2</span>
+        </p>
+
+        <div class="row">
+            <div class="col-md-6">
+                <p>Contact us:
+                </p><ul>
+                    <li>WebGoat mailing list: <span>owasp-webgoat@lists.owasp.org</span></li>
+                    <li>Bruce Mayhew: <span>webgoat@owasp.org</span></li>
+                </ul>
+                <p></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <p>WebGoat Authors
+                </p><ul>
+                    <li>Bruce Mayhew (Author &amp; Project Lead)</li>
+                    <li>Jeff Williams (Author &amp; Original Idea)</li>
+                    <li>Jason White (Architect)</li>
+                    <li>Nanne Baars (Plugin &amp; Platform Architecture)</li>
+                    <li>Richard Lawson (Architect)</li>
+                </ul>
+                <p></p>
+            </div>
+            <div class="col-md-6">
+                <p>Active Contributors
+                </p><ul>
+                    <li>Nanne Baars (Developer)</li>
+                    <li>Jason White (Developer)</li>
+                    <li>Doug Morato (Developer &amp; CI)</li>
+                    <li>Bruce Mayhew (Developer)</li>
+                    <li>René Zubcevic (Developer)</li>
+                </ul>
+                <p></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <p>WebGoat Design Team (Active)
+                </p><ul>
+                    <li>Nanne Baars (Plugin &amp; Platform Architecture)</li>
+                    <li>Bruce Mayhew (Goat Herder)</li>
+                    <li>Jason White (User Interface)</li>
+                </ul>
+                <p></p><br>
+
+                <p>Corporate Sponsorship - Companies that have donated significant time to WebGoat development
+                </p><ul>
+                    <li>Aspect Security</li>
+                    <li>Ounce Labs</li>
+                </ul>
+                <p></p><br>
+
+                <p>Did we miss you? Our sincere apologies, as we know there have
+                    been many contributors over the years. If your name does not
+                    appear in any of the lists above, please send us a note. We'll
+                    get you added with no further sacrifices required.</p>
+            </div>
+            <div class="col-md-6">
+                <p>Past Contributors
+                </p><ul>
+                    <li>Richard Lawson (Architect)</li>
+                    <li>Michael Dever (Developer)</li>
+                    <li>Jeff Wayman (Docs)</li>
+                    <li>Dave Cowden (Everything)</li>
+                    <li>Richard Lawson (Service Layer)</li>
+                    <li>Keith Gasser (Survey/Security)</li>
+                    <li>Devin Mayhew (Setup/Admin)</li>
+                    <li>Li Simon (Developer)</li>
+                    <li>Ali Looney (UI Design)</li>
+                    <li>David Anderson (Developer/Design)</li>
+                    <li>Christopher Blum (Lessons)</li>
+                    <li>Laurence Casey (Graphics)</li>
+                    <li>Brian Ciomei (Bug fixes)</li>
+                    <li>Rogan Dawes (Lessons)</li>
+                    <li>Erwin Geirnaert (Solutions)</li>
+                    <li>Aung Knant (Documentation)</li>
+                    <li>Ryan Knell (Lessons)</li>
+                    <li>Christine Koppeit (Build)</li>
+                    <li>Sherif Kousa (Lessons/Documentation)</li>
+                    <li>Reto Lippuner (Lessons)</li>
+                    <li>PartNet (Lessons)</li>
+                    <li>Yiannis Pavlosoglou (Lessons)</li>
+                    <li>Eric Sheridan (Lessons)</li>
+                    <li>Alex Smolen (Lessons)</li>
+                    <li>Chuck Willis (Lessons)</li>
+                    <li>Marcel Wirth (Lessons)</li>
+                </ul>
+                <p></p>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+</div>
+    </div>
+</div>
+
+
+
+
+</body></html>

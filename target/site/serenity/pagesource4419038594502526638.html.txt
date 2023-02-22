@@ -1,0 +1,707 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-store">
+
+    <!--  CSS -->
+    <link rel="shortcut icon" href="/WebGoat/images/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" type="text/css" href="/WebGoat/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/WebGoat/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/WebGoat/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/WebGoat/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="/WebGoat/css/coderay.css">
+    <link rel="stylesheet" type="text/css" href="/WebGoat/css/lessons.css">
+<!--    <link rel="stylesheet" type="text/css" th:href="@{/css/asciidoctor-default.css}"/>-->
+
+    <!--  end of CSS -->
+
+    <!-- JS -->
+    <!-- <script src="js/modernizr.min.js"></script>-->
+
+    <!-- Require.js used to load js asynchronously -->
+    <script src="js/libs/require.min.js" data-main="js/main"></script>
+    <meta http-equiv="Content-Type" content="text/id; charset=ISO-8859-1">
+    <title>WebGoat</title>
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="main" src="js/main.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery" src="js/libs/jquery.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="libs/jquery-base" src="js/libs/jquery-base.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="libs/jquery-vuln" src="js/libs/jquery-vuln.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="goatApp/goatApp" src="js/goatApp/goatApp.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="underscore" src="js/libs/underscore-min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="/WebGoat/js/libs/jquery.min.js" src="/WebGoat/js/libs/jquery.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="/WebGoat/js/libs/jquery-2.1.4.min.js" src="/WebGoat/js/libs/jquery-2.1.4.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="polyglot" src="js/libs/polyglot.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="goatApp/view/GoatRouter" src="js/goatApp/view/GoatRouter.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="goatApp/support/goatAsyncErrorHandler" src="js/goatApp/support/goatAsyncErrorHandler.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="bootstrap" src="js/libs/bootstrap.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jqueryui" src="js/libs/jquery-ui.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="backbone" src="js/libs/backbone-min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jqueryuivuln" src="js/libs/jquery-ui-1.10.4.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="goatApp/controller/LessonController" src="js/goatApp/controller/LessonController.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="goatApp/controller/MenuController" src="js/goatApp/controller/MenuController.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="goatApp/view/LessonContentView" src="js/goatApp/view/LessonContentView.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="goatApp/view/MenuView" src="js/goatApp/view/MenuView.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="goatApp/view/TitleView" src="js/goatApp/view/TitleView.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="goatApp/model/LessonContentModel" src="js/goatApp/model/LessonContentModel.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="goatApp/view/HintView" src="js/goatApp/view/HintView.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="goatApp/view/HelpControlsView" src="js/goatApp/view/HelpControlsView.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="goatApp/support/GoatUtils" src="js/goatApp/support/GoatUtils.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="goatApp/view/UserAndInfoView" src="js/goatApp/view/UserAndInfoView.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="goatApp/view/MenuButtonView" src="js/goatApp/view/MenuButtonView.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="goatApp/model/LessonInfoModel" src="js/goatApp/model/LessonInfoModel.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="goatApp/model/MenuCollection" src="js/goatApp/model/MenuCollection.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="goatApp/view/MenuItemView" src="js/goatApp/view/MenuItemView.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="libs/jquery.form" src="js/libs/jquery.form.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="goatApp/view/ErrorNotificationView" src="js/goatApp/view/ErrorNotificationView.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="goatApp/view/PaginationControlView" src="js/goatApp/view/PaginationControlView.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="goatApp/model/HTMLContentModel" src="js/goatApp/model/HTMLContentModel.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="goatApp/model/HintCollection" src="js/goatApp/model/HintCollection.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="goatApp/model/MenuModel" src="js/goatApp/model/MenuModel.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="goatApp/model/HintModel" src="js/goatApp/model/HintModel.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="goatApp/model/LessonOverviewCollection" src="js/goatApp/model/LessonOverviewCollection.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="text" src="js/libs/text.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="goatApp/model/AssignmentStatusModel" src="js/goatApp/model/AssignmentStatusModel.js"></script></head>
+<body>
+
+<section id="container">
+    <header id="header">
+        <!--logo start-->
+        <div class="brand">
+            <a href="/WebGoat/welcome.mvc" class="logo"><span>Web</span>Goat</a>
+        </div>
+        <!--logo end-->
+        <div id="lesson-title-wrapper"><h1 id="lesson-title">SQL Injection (advanced)</h1></div><!--lesson title end-->
+        <div class="user-nav pull-right" id="user-and-info-nav" style="margin-right: 75px;">
+            <div class="dropdown" style="display:inline">
+                <button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle" id="user-menu">
+                    <i class="fa fa-user"></i> <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-left">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/WebGoat/logout">Logout</a></li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation" class="disabled"><a role="menuitem" tabindex="-1" href="#">User: <span>renekton7mapjy3hg3</span></a>
+                    </li>
+                    <li role="presentation" class="disabled"><a role="menuitem" tabindex="-1" href="#">Role:
+                        <span>User</span>
+                        
+                    </a>
+                    </li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation" class="disabled"><a role="menuitem" tabindex="-1" href="#">
+                        <span>Version</span><span>: </span>
+                        <span>8.2.2</span></a>
+                    </li>
+                    <li role="presentation" class="disabled"><a role="menuitem" tabindex="-1" href="#">
+                        <span>Build</span><span>: </span>
+                        <span></span></a></li>
+                </ul>
+            </div>
+            <div style="display:inline" id="settings">
+                <!--<button type="button" id="admin-button" class="btn btn-default right_nav_button" title="Administrator">-->
+                <!--<i class="fa fa-cog"></i>-->
+                <!--</button>-->
+                <a href="#reportCard">
+                    <button type="button" id="report-card-button" class="btn btn-default right_nav_button button-up" title="Report card">
+                       <i class="fa fa-bar-chart-o"></i>
+                    </button>
+                </a>
+                <!--<button type="button" id="user-management" class="btn btn-default right_nav_button"-->
+                <!--title="User management">-->
+                <!--<i class="fa fa-users"></i>-->
+                <!--</button>-->
+            </div>
+            <button type="button" id="about-button" class="btn btn-default right_nav_button" title="About WebGoat" data-toggle="modal" data-target="#about-modal">
+                <i class="fa fa-info"></i>
+            </button>
+            <a href="mailto:webgoat@owasp.org?Subject=Webgoat%20feedback" target="_top">
+                <button type="button" class="btn btn-default right_nav_button" data-toggle="tooltip" title="Contact Us">
+                    <i class="fa fa-envelope"></i>
+                </button>
+            </a>
+
+
+        </div>
+    </header>
+
+    <aside class="sidebar">
+        <div id="menu-container"><ul class="nano-content"><li class="sub-menu ng-scope"><a category="Introduction"><i class="fa fa-angle-right pull-right"></i><span>Introduction</span></a><ul class="slideDown lessonsAndStages" id="Introduction"><li class="lesson"><a href="#lesson/WebGoatIntroduction.lesson" id="Introduction-WebGoat">WebGoat</a><span class="glyphicon glyphicon-check lesson-complete"></span></li><li class="lesson"><a href="#lesson/WebWolfIntroduction.lesson" id="Introduction-WebWolf">WebWolf</a></li></ul></li><li class="sub-menu ng-scope"><a category="General"><i class="fa fa-angle-right pull-right"></i><span>General</span></a><ul class="slideDown lessonsAndStages" id="General"><li class="lesson"><a href="#lesson/HttpBasics.lesson" id="General-HTTPBasics">HTTP Basics</a></li><li class="lesson"><a href="#lesson/HttpProxies.lesson" id="General-HTTPProxies">HTTP Proxies</a></li><li class="lesson"><a href="#lesson/ChromeDevTools.lesson" id="General-DeveloperTools">Developer Tools</a></li><li class="lesson"><a href="#lesson/CIA.lesson" id="General-CIATriad">CIA Triad</a></li><li class="lesson"><a href="#lesson/Crypto.lesson" id="General-CryptoBasics">Crypto Basics</a></li><li class="lesson"><a href="#lesson/LessonTemplate.lesson" id="General-Writingnewlesson">Writing new lesson</a></li></ul></li><li class="sub-menu ng-scope"><a category="A1Injection"><i class="fa fa-angle-right pull-right"></i><span>(A1) Injection</span></a><ul class="slideDown lessonsAndStages" id="A1Injection" style="display: block;"><li class="lesson"><a href="#lesson/SqlInjection.lesson" id="A1Injection-SQLInjectionintro">SQL Injection (intro)</a></li><li class="lesson selected"><a href="#lesson/SqlInjectionAdvanced.lesson" id="A1Injection-SQLInjectionadvanced">SQL Injection (advanced)</a></li><li class="lesson"><a href="#lesson/SqlInjectionMitigations.lesson" id="A1Injection-SQLInjectionmitigation">SQL Injection (mitigation)</a></li><li class="lesson"><a href="#lesson/PathTraversal.lesson" id="A1Injection-Pathtraversal">Path traversal</a></li></ul></li><li class="sub-menu ng-scope"><a category="A2BrokenAuthentication"><i class="fa fa-angle-right pull-right"></i><span>(A2) Broken Authentication</span></a><ul class="slideDown lessonsAndStages" id="A2BrokenAuthentication"><li class="lesson"><a href="#lesson/AuthBypass.lesson" id="A2BrokenAuthentication-AuthenticationBypasses">Authentication Bypasses</a></li><li class="lesson"><a href="#lesson/JWT.lesson" id="A2BrokenAuthentication-JWTtokens">JWT tokens</a></li><li class="lesson"><a href="#lesson/PasswordReset.lesson" id="A2BrokenAuthentication-Passwordreset">Password reset</a></li><li class="lesson"><a href="#lesson/SecurePasswords.lesson" id="A2BrokenAuthentication-SecurePasswords">Secure Passwords</a></li></ul></li><li class="sub-menu ng-scope"><a category="A3SensitiveDataExposure"><i class="fa fa-angle-right pull-right"></i><span>(A3) Sensitive Data Exposure</span></a><ul class="slideDown lessonsAndStages" id="A3SensitiveDataExposure"><li class="lesson"><a href="#lesson/InsecureLogin.lesson" id="A3SensitiveDataExposure-InsecureLogin">Insecure Login</a></li></ul></li><li class="sub-menu ng-scope"><a category="A4XMLExternalEntitiesXXE"><i class="fa fa-angle-right pull-right"></i><span>(A4) XML External Entities (XXE)</span></a><ul class="slideDown lessonsAndStages" id="A4XMLExternalEntitiesXXE"><li class="lesson"><a href="#lesson/XXE.lesson" id="A4XMLExternalEntitiesXXE-XXE">XXE</a></li></ul></li><li class="sub-menu ng-scope"><a category="A5BrokenAccessControl"><i class="fa fa-angle-right pull-right"></i><span>(A5) Broken Access Control</span></a><ul class="slideDown lessonsAndStages" id="A5BrokenAccessControl"><li class="lesson"><a href="#lesson/IDOR.lesson" id="A5BrokenAccessControl-InsecureDirectObjectReferences">Insecure Direct Object References</a></li><li class="lesson"><a href="#lesson/MissingFunctionAC.lesson" id="A5BrokenAccessControl-MissingFunctionLevelAccessControl">Missing Function Level Access Control</a></li></ul></li><li class="sub-menu ng-scope"><a category="A7Cross-SiteScriptingXSS"><i class="fa fa-angle-right pull-right"></i><span>(A7) Cross-Site Scripting (XSS)</span></a><ul class="slideDown lessonsAndStages" id="A7Cross-SiteScriptingXSS"><li class="lesson"><a href="#lesson/CrossSiteScripting.lesson" id="A7Cross-SiteScriptingXSS-CrossSiteScripting">Cross Site Scripting</a></li></ul></li><li class="sub-menu ng-scope"><a category="A8InsecureDeserialization"><i class="fa fa-angle-right pull-right"></i><span>(A8) Insecure Deserialization</span></a><ul class="slideDown lessonsAndStages" id="A8InsecureDeserialization"><li class="lesson"><a href="#lesson/InsecureDeserialization.lesson" id="A8InsecureDeserialization-InsecureDeserialization">Insecure Deserialization</a></li></ul></li><li class="sub-menu ng-scope"><a category="A9VulnerableComponents"><i class="fa fa-angle-right pull-right"></i><span>(A9) Vulnerable Components</span></a><ul class="slideDown lessonsAndStages" id="A9VulnerableComponents"><li class="lesson"><a href="#lesson/VulnerableComponents.lesson" id="A9VulnerableComponents-VulnerableComponents">Vulnerable Components</a></li></ul></li><li class="sub-menu ng-scope"><a category="A82013RequestForgeries"><i class="fa fa-angle-right pull-right"></i><span>(A8:2013) Request Forgeries</span></a><ul class="slideDown lessonsAndStages" id="A82013RequestForgeries"><li class="lesson"><a href="#lesson/CSRF.lesson" id="A82013RequestForgeries-Cross-SiteRequestForgeries">Cross-Site Request Forgeries</a></li><li class="lesson"><a href="#lesson/SSRF.lesson" id="A82013RequestForgeries-Server-SideRequestForgery">Server-Side Request Forgery</a></li></ul></li><li class="sub-menu ng-scope"><a category="Clientside"><i class="fa fa-angle-right pull-right"></i><span>Client side</span></a><ul class="slideDown lessonsAndStages" id="Clientside"><li class="lesson"><a href="#lesson/BypassRestrictions.lesson" id="Clientside-Bypassfront-endrestrictions">Bypass front-end restrictions</a></li><li class="lesson"><a href="#lesson/ClientSideFiltering.lesson" id="Clientside-Clientsidefiltering">Client side filtering</a></li><li class="lesson"><a href="#lesson/HtmlTampering.lesson" id="Clientside-HTMLtampering">HTML tampering</a></li></ul></li><li class="sub-menu ng-scope"><a category="Challenges"><i class="fa fa-angle-right pull-right"></i><span>Challenges</span></a><ul class="slideDown lessonsAndStages" id="Challenges"><li class="lesson"><a href="#lesson/Challenge1.lesson" id="Challenges-Adminlostpassword">Admin lost password</a></li><li class="lesson"><a href="#lesson/Challenge5.lesson" id="Challenges-Withoutpassword">Without password</a></li><li class="lesson"><a href="#lesson/Challenge7.lesson" id="Challenges-Adminpasswordreset">Admin password reset</a></li><li class="lesson"><a href="#lesson/Challenge8.lesson" id="Challenges-Withoutaccount">Without account</a></li></ul></li></ul></div>
+    </aside>
+    <!--sidebar left end-->
+
+    <!--main content start-->
+    <section class="main-content-wrapper">
+        <section id="main-content">
+            <div id="lesson-page" class="pages" style="">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="col-md-12" align="left">
+                            <div id="lesson-content-wrapper" class="panel">
+                                <div class="" id="error-notification-container">
+                                    <div class="" id="error-notification">
+                                        <i class="fa fa-exclamation-circle"> There was an unexpected error. Please try
+                                            again.</i>
+                                    </div>
+                                </div>
+                                <div class="" id="help-controls">
+                                    <button class="btn btn-primary btn-xs btn-danger help-button" id="show-hints-button" style="">Show hints</button>
+
+                                    <button class="btn btn-xs help-button" id="restart-lesson-button">Reset lesson</button>
+                                </div>
+
+                                <div class="lesson-hint" id="lesson-hint-container">
+                                    <!--<h4>Hints</h4>-->
+                                    <div class="panel">
+                                        <div id="message" class="info"></div>
+                                        <div class="panel-body" id="lesson-hint">
+                                            <span class="glyphicon-class glyphicon glyphicon-circle-arrow-left" id="show-prev-hint" style="visibility: hidden;"></span>
+                                            <span class="glyphicon-class glyphicon glyphicon-circle-arrow-right" id="show-next-hint" style="visibility: visible;"></span>
+                                            <br>
+                                            <span id="lesson-hint-content">Look at the different response you receive from the server</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="lesson-hint" id="lesson-overview-container">
+                                    <div class="panel">
+                                        <div class="panel-body" id="lesson-overview"></div>
+                                    </div>
+                                </div>
+                                <div id="lesson-page-controls"><div>
+    <div class="page-link-wrapper">
+        <span class="glyphicon-class glyphicon glyphicon-circle-arrow-left show-prev-page"></span>
+        
+        
+            <a href="http://192.168.84.142:8080/WebGoat/start.mvc#lesson/SqlInjectionAdvanced.lesson/0" alt="Page 0" class="no-underline">
+            
+                <div class="page-link ">1</div>
+            
+            </a>
+        
+            <a href="http://192.168.84.142:8080/WebGoat/start.mvc#lesson/SqlInjectionAdvanced.lesson/1" alt="Page 1" class="no-underline">
+            
+                <div class="page-link ">2</div>
+            
+            </a>
+        
+            <a href="http://192.168.84.142:8080/WebGoat/start.mvc#lesson/SqlInjectionAdvanced.lesson/2" alt="Page 2" class="no-underline">
+            
+                <div class="attack-link solved-false ">3</div>
+            
+            </a>
+        
+            <a href="http://192.168.84.142:8080/WebGoat/start.mvc#lesson/SqlInjectionAdvanced.lesson/3" alt="Page 3" class="no-underline">
+            
+                <div class="page-link ">4</div>
+            
+            </a>
+        
+            <a href="http://192.168.84.142:8080/WebGoat/start.mvc#lesson/SqlInjectionAdvanced.lesson/4" alt="Page 4" class="no-underline">
+            
+                <div class="attack-link solved-false  cur-page">5</div>
+            
+            </a>
+        
+            <a href="http://192.168.84.142:8080/WebGoat/start.mvc#lesson/SqlInjectionAdvanced.lesson/5" alt="Page 5" class="no-underline">
+            
+                <div class="attack-link solved-false ">6</div>
+            
+            </a>
+        
+        <span class="glyphicon-class glyphicon glyphicon-circle-arrow-right show-next-page"></span>
+    </div>
+</div></div>
+
+                                <div class="lesson-content">
+
+
+
+<!-- Model is setup in the class StartLesson -->
+<div id="lessonInstructions"></div>
+
+<div id="message" class="info"></div>
+<br>
+
+
+
+
+<link rel="stylesheet" type="text/css" href="/WebGoat/lesson_css/assignments.css">
+
+<!-- 1 -->
+<div class="lesson-page-wrapper" style="display: none;">
+    <div class="sect1">
+<h2 id="_concept">Concept</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This lesson describes the more advanced topics for an SQL injection.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_goals">Goals</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Combining SQL injection Techniques</p>
+</li>
+<li>
+<p>Blind SQL injection</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<!-- 2 -->
+<div class="lesson-page-wrapper" style="display: none;">
+    <div class="sect1">
+<h2 id="_special_characters">Special Characters</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code>/* */          are inline comments
+-- , #          are line comments
+
+Example: SELECT * FROM users WHERE name = 'admin' -- AND pass = 'pass'</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code>;        allows query chaining
+
+Example: SELECT * FROM users; DROP TABLE users;</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code>',+,||         allows string concatenation
+Char()         strings without quotes
+
+Example: SELECT * FROM users WHERE name = '+char(27) OR 1=1</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_special_statements">Special Statements</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_union">Union</h3>
+<div class="paragraph">
+<p>The Union operator is used, to combine the results of two or more SELECT Statements.</p>
+</div>
+<div class="paragraph">
+<p>Rules to keep in mind, when working with a UNION:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The number of columns selected in each statement must be the same.</p>
+</li>
+<li>
+<p>The datatype of the first column in the first SELECT statement, must match the datatype
+of the first column in the second (third, fourth, …​) SELECT Statement. The Same applies to all other columns.</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code>SELECT first_name FROM user_system_data UNION SELECT login_count FROM user_data;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The UNION ALL Syntax also allows duplicate Values.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_joins">Joins</h3>
+<div class="paragraph">
+<p>The Join operator is used to combine rows from two or more tables, based on a related column</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code>SELECT * FROM user_data INNER JOIN user_data_tan ON user_data.userid=user_data_tan.userid;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>For more detailed information about JOINS visit: <a href="https://www.w3schools.com/sql/sql_join.asp" class="bare">https://www.w3schools.com/sql/sql_join.asp</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- 3 -->
+<div class="lesson-page-wrapper" style="display: none;">
+    <div class="sect1">
+<h2 id="_try_it_pulling_data_from_other_tables">Try It! Pulling data from other tables</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The input field below is used to get data from a user by their last name.<br>
+The table is called 'user_data':</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>CREATE TABLE user_data (userid int not null,
+                        first_name varchar(20),
+                        last_name varchar(20),
+                        cc_number varchar(30),
+                        cc_type varchar(10),
+                        cookie varchar(20),
+                        login_count int);</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Through experimentation you found that this field is susceptible to SQL injection.
+Now you want to use that knowledge to get the contents of another table.<br>
+The table you want to pull data from is:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>CREATE TABLE user_system_data (userid int not null primary key,
+			                   user_name varchar(12),
+			                   password varchar(10),
+			                   cookie varchar(30));</pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>6.a)</strong> Retrieve all data from the table<br>
+<strong>6.b)</strong> When you have figured it out…​. What is Dave’s password?</p>
+</div>
+<div class="paragraph">
+<p>Note: There are multiple ways to solve this Assignment. One is by using a UNION, the other by appending
+a new SQl statement. Maybe you can find both of them.</p>
+</div>
+</div>
+</div>
+    <div class="attack-container">
+        <div class="assignment-success"><i class="fa fa-2 fa-check hidden" aria-hidden="true"></i></div>
+        <form class="attack-form" accept-charset="UNKNOWN" method="POST" name="form" action="/WebGoat/SqlInjectionAdvanced/attack6a">
+            <table>
+                <tbody><tr>
+                    <td>Name:</td>
+                    <td><input name="userid_6a" value="" type="TEXT"></td>
+                    <td><input name="Get Account Info" value="Get Account Info" type="SUBMIT"></td>
+                    <td></td>
+                </tr>
+            </tbody></table>
+        </form>        
+        <form class="attack-form" accept-charset="UNKNOWN" method="POST" name="form" action="/WebGoat/SqlInjectionAdvanced/attack6b">
+            <table>
+                <tbody><tr>
+                    <td>Password:</td>
+                    <td><input name="userid_6b" value="" type="TEXT"></td>
+                    <td><input name="Check Dave's Password:" value="Check Password" type="SUBMIT"></td>
+                    <td></td>
+                </tr>
+            </tbody></table>
+        </form>
+        <div class="attack-feedback" style="display: none;"></div>
+        <div class="attack-output" style="display: none;"></div>
+    </div>
+</div>
+
+<!-- 4 -->
+<div class="lesson-page-wrapper" style="display: none;">
+    <div class="sect1">
+<h2 id="_blind_sql_injection">Blind SQL injection</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Blind SQL injection is a type of SQL injection attack that asks the database true or false
+questions and determines the answer based on the application’s response. This attack is often used when the web
+application is configured to show generic error messages, but has not mitigated the code that is vulnerable to SQL
+injection.</p>
+</div>
+<div class="sect2">
+<h3 id="_difference">Difference</h3>
+<div class="paragraph">
+<p>Let us first start with the difference between a normal SQL injection and a blind SQL injection. In a normal
+SQL injection the error messages from the database are displayed and gives enough information to find out how
+the query is working. Or in the case of a UNION based SQL injection the application does not reflect the information
+directly on the web page. So in the case where nothing is displayed you will need to start asking the database questions
+based on a true or false statement. That is why a blind SQL injection is much more difficult to exploit.</p>
+</div>
+<div class="paragraph">
+<p>There are several different types of blind SQL injections: content-based and time-based SQL injections.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_example">Example</h3>
+<div class="paragraph">
+<p>In this case we are trying to ask the database a boolean question based on a unique id, for example
+suppose we have the following url: <code><a href="https://my-shop.com?article=4" class="bare">https://my-shop.com?article=4</a></code>
+On the server side this query will be translated as follows:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>SELECT * FROM articles WHERE article_id = 4</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>When we want to exploit this we change the url into: <code><a href="https://shop.example.com?article=4" class="bare">https://shop.example.com?article=4</a> AND 1=1</code>
+This will be translated to:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>SELECT * FROM articles WHERE article_id = 4 and 1 = 1</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If the browser will return the same page as it used to when using <code><a href="https://shop.example.com?article=4" class="bare">https://shop.example.com?article=4</a></code> you know the
+website is vulnerable for a blind SQL injection.
+If the browser responds with a page not found or something else you know a blind SQL injection might not work.
+You can now change the SQL query and test for example: <code><a href="https://shop.example.com?article=4" class="bare">https://shop.example.com?article=4</a> AND 1=2</code> which will not return
+anything because the query returns false.</p>
+</div>
+<div class="paragraph">
+<p>How do we actually take advantage of this? Above we only asked the database a trivial question but you can
+for example also use the following url: <code><a href="https://shop.example.com?article=4" class="bare">https://shop.example.com?article=4</a> AND substring(database_version(),1,1) = 2</code></p>
+</div>
+<div class="paragraph">
+<p>Most of the time you start by finding which type of database is used, based on the type of database you can find
+the system tables of the database you can enumerate all the tables present in the database. With this information
+you can start getting information from all the tables and you are able to dump the database.
+Be aware that this approach might not work if the privileges of the database are setup correctly (meaning the
+system tables cannot be queried with the user used to connect from the web application to the database).</p>
+</div>
+<div class="paragraph">
+<p>Another way is called a time-based SQL injection, in this case you will ask the database to wait before returning
+the result. You might need to use this if you are totally blind. This means there is no difference between the response data.
+To achieve this kind of SQL injection you could use:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>article = 4; sleep(10) --</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="lesson-page-wrapper" style="">
+    <div class="paragraph">
+<p>We now explained the basic steps involved in an SQL injection. In this assignment you will need to combine all
+the things we explained in the SQL lessons.</p>
+</div>
+<div class="paragraph">
+<p>Goal: Can you login as Tom?</p>
+</div>
+<div class="paragraph">
+<p>Have fun!</p>
+</div>
+    <link rel="stylesheet" type="text/css" href="/WebGoat/lesson_css/challenge.css">
+    <script src="/WebGoat/lesson_js/challenge.js" language="JavaScript"></script>
+    <div class="attack-container">
+        <div class="assignment-success"><i class="fa fa-2 fa-check hidden" aria-hidden="true"></i></div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="panel panel-login">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <a href="#" class="" id="login-form-link">Login</a>
+                                </div>
+                                <div class="col-xs-6">
+                                    <a href="#" id="register-form-link" class="active">Register</a>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <form id="login-form" class="attack-form" accept-charset="UNKNOWN" method="POST" name="form" action="/WebGoat/SqlInjectionAdvanced/challenge_Login" role="form" style="display: none;">
+                                        <div class="form-group">
+                                            <input type="text" name="username_login" id="username4" tabindex="1" class="form-control" placeholder="Username" value="">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" name="password_login" id="password4" tabindex="2" class="form-control" placeholder="Password">
+                                        </div>
+                                        <div class="form-group text-center">
+                                            <input type="checkbox" tabindex="3" class="" name="remember" id="remember">
+                                            <label for="remember"> Remember me</label>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-sm-6 col-sm-offset-3">
+                                                    <input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn-primary" value="Log In">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <div class="text-center">
+                                                        <a href="#" tabindex="5" class="forgot-password">Forgot
+                                                            Password?</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <form id="register-form" class="attack-form" accept-charset="UNKNOWN" method="PUT" name="form" action="/WebGoat/SqlInjectionAdvanced/challenge" style="" role="form">
+                                        <div class="form-group">
+                                            <input type="text" name="username_reg" id="username" tabindex="1" class="form-control" placeholder="Username" value="">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="email" name="email_reg" id="email" tabindex="1" class="form-control" placeholder="Email Address" value="">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" name="password_reg" id="password" tabindex="2" class="form-control" placeholder="Password">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" name="confirm_password_reg" id="confirm-password" tabindex="2" class="form-control" placeholder="Confirm Password">
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-sm-6 col-sm-offset-3">
+                                                    <input type="submit" name="register-submit" id="register-submit" tabindex="4" class="form-control btn btn-primary" value="Register Now">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="attack-feedback" style="">User tom' and length(password) &gt; 25-- created, please proceed to the login page.</div>
+        <div class="attack-output" style=""></div>
+    </div>
+</div>
+
+<div class="lesson-page-wrapper" style="display: none;">
+    <span id="quiz_id" data-quiz_id="sql_injection"></span>
+    <link rel="stylesheet" type="text/css" href="/WebGoat/css/quiz.css">
+    <script src="/WebGoat/js/quiz.js" language="JavaScript"></script>
+    <link rel="import" type="application/json" href="/WebGoat/lesson_js/questions.json">
+    <div class="paragraph">
+<p>Now it is time for a quiz! It is recommended to do all SQL injection lessons before trying the quiz. Answer all questions correctly to complete the assignment.</p>
+</div>
+        <div class="attack-container quiz">
+            <div class="assignment-success"><i class="fa fa-2 fa-check hidden" aria-hidden="true"></i></div>
+            <div class="container-fluid">
+                <form id="quiz-form" class="attack-form" accept-charset="UNKNOWN" method="POST" name="form" action="/WebGoat/SqlInjectionAdvanced/quiz" role="form">
+                    <div id="q_container"><div id="question_0" class="quiz_question" name="question"><p>1.&nbsp;What is the difference between a prepared statement and a statement?</p><fieldset><input id="question_0_1_input" type="radio" name="question_0_solution" value="Solution 1: Prepared statements are statements with hard-coded parameters." required=""><label for="question_0_1_input">Solution 1: Prepared statements are statements with hard-coded parameters.</label><br><input id="question_0_2_input" type="radio" name="question_0_solution" value="Solution 2: Prepared statements are not stored in the database." required=""><label for="question_0_2_input">Solution 2: Prepared statements are not stored in the database.</label><br><input id="question_0_3_input" type="radio" name="question_0_solution" value="Solution 3: A statement is faster." required=""><label for="question_0_3_input">Solution 3: A statement is faster.</label><br><input id="question_0_4_input" type="radio" name="question_0_solution" value="Solution 4: A statement has got values instead of a prepared statement" required=""><label for="question_0_4_input">Solution 4: A statement has got values instead of a prepared statement</label><br></fieldset></div><div id="question_1" class="quiz_question" name="question"><p>2.&nbsp;Which one of the following characters is a placeholder for variables?</p><fieldset><input id="question_1_1_input" type="radio" name="question_1_solution" value="Solution 1: *" required=""><label for="question_1_1_input">Solution 1: *</label><br><input id="question_1_2_input" type="radio" name="question_1_solution" value="Solution 2: =" required=""><label for="question_1_2_input">Solution 2: =</label><br><input id="question_1_3_input" type="radio" name="question_1_solution" value="Solution 3: ?" required=""><label for="question_1_3_input">Solution 3: ?</label><br><input id="question_1_4_input" type="radio" name="question_1_solution" value="Solution 4: !" required=""><label for="question_1_4_input">Solution 4: !</label><br></fieldset></div><div id="question_2" class="quiz_question" name="question"><p>3.&nbsp;How can prepared statements be faster than statements?</p><fieldset><input id="question_2_1_input" type="radio" name="question_2_solution" value="Solution 1: They are not static so they can compile better written code than statements." required=""><label for="question_2_1_input">Solution 1: They are not static so they can compile better written code than statements.</label><br><input id="question_2_2_input" type="radio" name="question_2_solution" value="Solution 2: Prepared statements are compiled once by the database management system waiting for input and are pre-compiled this way." required=""><label for="question_2_2_input">Solution 2: Prepared statements are compiled once by the database management system waiting for input and are pre-compiled this way.</label><br><input id="question_2_3_input" type="radio" name="question_2_solution" value="Solution 3: Prepared statements are stored and wait for input it raises performance considerably." required=""><label for="question_2_3_input">Solution 3: Prepared statements are stored and wait for input it raises performance considerably.</label><br><input id="question_2_4_input" type="radio" name="question_2_solution" value="Solution 4: Oracle optimized prepared statements. Because of the minimal use of the databases resources it is faster." required=""><label for="question_2_4_input">Solution 4: Oracle optimized prepared statements. Because of the minimal use of the databases resources it is faster.</label><br></fieldset></div><div id="question_3" class="quiz_question" name="question"><p>4.&nbsp;How can a prepared statement prevent SQL-Injection?</p><fieldset><input id="question_3_1_input" type="radio" name="question_3_solution" value="Solution 1: Prepared statements have got an inner check to distinguish between input and logical errors." required=""><label for="question_3_1_input">Solution 1: Prepared statements have got an inner check to distinguish between input and logical errors.</label><br><input id="question_3_2_input" type="radio" name="question_3_solution" value="Solution 2: Prepared statements use the placeholders to make rules what input is allowed to use." required=""><label for="question_3_2_input">Solution 2: Prepared statements use the placeholders to make rules what input is allowed to use.</label><br><input id="question_3_3_input" type="radio" name="question_3_solution" value="Solution 3: Placeholders can prevent that the users input gets attached to the SQL query resulting in a seperation of code and data." required=""><label for="question_3_3_input">Solution 3: Placeholders can prevent that the users input gets attached to the SQL query resulting in a seperation of code and data.</label><br><input id="question_3_4_input" type="radio" name="question_3_solution" value="Solution 4: Prepared statements always read inputs literally and never mixes it with its SQL commands." required=""><label for="question_3_4_input">Solution 4: Prepared statements always read inputs literally and never mixes it with its SQL commands.</label><br></fieldset></div><div id="question_4" class="quiz_question" name="question"><p>5.&nbsp;What happens if a person with malicious intent writes into a register form :Robert); DROP TABLE Students;-- that has a prepared statement?</p><fieldset><input id="question_4_1_input" type="radio" name="question_4_solution" value="Solution 1: The table Students and all of its content will be deleted." required=""><label for="question_4_1_input">Solution 1: The table Students and all of its content will be deleted.</label><br><input id="question_4_2_input" type="radio" name="question_4_solution" value="Solution 2: The input deletes all students with the name Robert." required=""><label for="question_4_2_input">Solution 2: The input deletes all students with the name Robert.</label><br><input id="question_4_3_input" type="radio" name="question_4_solution" value="Solution 3: The database registers 'Robert' and deletes the table afterwards." required=""><label for="question_4_3_input">Solution 3: The database registers 'Robert' and deletes the table afterwards.</label><br><input id="question_4_4_input" type="radio" name="question_4_solution" value="Solution 4: The database registers 'Robert' ); DROP TABLE Students;--'." required=""><label for="question_4_4_input">Solution 4: The database registers 'Robert' ); DROP TABLE Students;--'.</label><br></fieldset></div></div>
+                    <br>
+                <input name="Quiz_solutions" value="Submit answers" type="SUBMIT">
+                </form>
+            </div>
+            <div class="attack-feedback" style="display: none;"></div>
+            <div class="attack-output" style="display: none;"></div>
+        </div>
+</div>
+
+
+
+
+
+</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="report-card-page" class="pages" style="display: none;">
+            </div>
+        </section>
+    </section>
+
+</section>
+
+
+<!-- About WebGoat Modal -->
+<div class="modal" id="about-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 class="modal-title" id="myModalLabel">About WebGoat - Provided by the OWASP Foundation</h3>
+    </div>
+    <div class="modal-body modal-scroll">
+        <p>Thanks for hacking The Goat!</p>
+
+        <p>WebGoat is a demonstration of common web application flaws. The
+            associated exercises are intended to provide hands-on experience with
+            techniques aimed at demonstrating and testing application penetration.
+        </p>
+
+        <p>From the entire WebGoat team, we appreciate your interest and efforts
+            in making applications not just better, but safer and more secure for
+            everyone. We, as well as our sacrificial goat, thank you.</p>
+
+        <p>
+            Version: <span>8.2.2</span>
+        </p>
+
+        <div class="row">
+            <div class="col-md-6">
+                <p>Contact us:
+                </p><ul>
+                    <li>WebGoat mailing list: <span>owasp-webgoat@lists.owasp.org</span></li>
+                    <li>Bruce Mayhew: <span>webgoat@owasp.org</span></li>
+                </ul>
+                <p></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <p>WebGoat Authors
+                </p><ul>
+                    <li>Bruce Mayhew (Author &amp; Project Lead)</li>
+                    <li>Jeff Williams (Author &amp; Original Idea)</li>
+                    <li>Jason White (Architect)</li>
+                    <li>Nanne Baars (Plugin &amp; Platform Architecture)</li>
+                    <li>Richard Lawson (Architect)</li>
+                </ul>
+                <p></p>
+            </div>
+            <div class="col-md-6">
+                <p>Active Contributors
+                </p><ul>
+                    <li>Nanne Baars (Developer)</li>
+                    <li>Jason White (Developer)</li>
+                    <li>Doug Morato (Developer &amp; CI)</li>
+                    <li>Bruce Mayhew (Developer)</li>
+                    <li>René Zubcevic (Developer)</li>
+                </ul>
+                <p></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <p>WebGoat Design Team (Active)
+                </p><ul>
+                    <li>Nanne Baars (Plugin &amp; Platform Architecture)</li>
+                    <li>Bruce Mayhew (Goat Herder)</li>
+                    <li>Jason White (User Interface)</li>
+                </ul>
+                <p></p><br>
+
+                <p>Corporate Sponsorship - Companies that have donated significant time to WebGoat development
+                </p><ul>
+                    <li>Aspect Security</li>
+                    <li>Ounce Labs</li>
+                </ul>
+                <p></p><br>
+
+                <p>Did we miss you? Our sincere apologies, as we know there have
+                    been many contributors over the years. If your name does not
+                    appear in any of the lists above, please send us a note. We'll
+                    get you added with no further sacrifices required.</p>
+            </div>
+            <div class="col-md-6">
+                <p>Past Contributors
+                </p><ul>
+                    <li>Richard Lawson (Architect)</li>
+                    <li>Michael Dever (Developer)</li>
+                    <li>Jeff Wayman (Docs)</li>
+                    <li>Dave Cowden (Everything)</li>
+                    <li>Richard Lawson (Service Layer)</li>
+                    <li>Keith Gasser (Survey/Security)</li>
+                    <li>Devin Mayhew (Setup/Admin)</li>
+                    <li>Li Simon (Developer)</li>
+                    <li>Ali Looney (UI Design)</li>
+                    <li>David Anderson (Developer/Design)</li>
+                    <li>Christopher Blum (Lessons)</li>
+                    <li>Laurence Casey (Graphics)</li>
+                    <li>Brian Ciomei (Bug fixes)</li>
+                    <li>Rogan Dawes (Lessons)</li>
+                    <li>Erwin Geirnaert (Solutions)</li>
+                    <li>Aung Knant (Documentation)</li>
+                    <li>Ryan Knell (Lessons)</li>
+                    <li>Christine Koppeit (Build)</li>
+                    <li>Sherif Kousa (Lessons/Documentation)</li>
+                    <li>Reto Lippuner (Lessons)</li>
+                    <li>PartNet (Lessons)</li>
+                    <li>Yiannis Pavlosoglou (Lessons)</li>
+                    <li>Eric Sheridan (Lessons)</li>
+                    <li>Alex Smolen (Lessons)</li>
+                    <li>Chuck Willis (Lessons)</li>
+                    <li>Marcel Wirth (Lessons)</li>
+                </ul>
+                <p></p>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+</div>
+    </div>
+</div>
+
+
+
+
+</body></html>

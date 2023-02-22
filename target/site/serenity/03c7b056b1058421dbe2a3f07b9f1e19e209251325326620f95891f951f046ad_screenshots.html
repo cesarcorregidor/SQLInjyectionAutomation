@@ -1,0 +1,233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle"></span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="fdb69dac4b00f954acd2f5fcd64a5db82ebfbb22c48e7d735aeb34a7b076d2ef.html">Sqlinjection</a></span>
+                > <span class="truncate-60"><a
+                    href="03c7b056b1058421dbe2a3f07b9f1e19e209251325326620f95891f951f046ad.html">Successful SQL Injection </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 21-02-2023 20:57</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Sqlinjection </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Successful SQL Injection
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="6340dea5d7d3c5a80db8d31c50a71fbdf0e3ef0a2114314b6c5e7413e54d7e33.png" title=" Given He is on the web page" width="1366"/>
+                <img src="6340dea5d7d3c5a80db8d31c50a71fbdf0e3ef0a2114314b6c5e7413e54d7e33.png" title=" Open browser" width="1366"/>
+                <img src="6340dea5d7d3c5a80db8d31c50a71fbdf0e3ef0a2114314b6c5e7413e54d7e33.png" title=" Given He is on the web page (completed)" width="1366"/>
+                <img src="8c95247b15071cd06e8dc6e1d9fa735954a2c391e9558b89482b4276e2fc9ad8.png" title=" When He registers correctly and he validates that he is already on the home page" width="1366"/>
+                <img src="8c95247b15071cd06e8dc6e1d9fa735954a2c391e9558b89482b4276e2fc9ad8.png" title=" Open browser" width="1366"/>
+                <img src="6340dea5d7d3c5a80db8d31c50a71fbdf0e3ef0a2114314b6c5e7413e54d7e33.png" title=" Open browser (completed)" width="1366"/>
+                <img src="d9298dfe612451506376b308e2a7b8562a403647d2d0e77f2d24e3089f01dacc.png" title=" Click register" width="1366"/>
+                <img src="d9298dfe612451506376b308e2a7b8562a403647d2d0e77f2d24e3089f01dacc.png" title=" Enter registration info" width="1366"/>
+                <img src="8d0d811271beff2aa8410d3b646ba985af3d46b0c971fd08c908f6f416855c26.png" title=" Enter registration info (completed)" width="1366"/>
+                <img src="8d0d811271beff2aa8410d3b646ba985af3d46b0c971fd08c908f6f416855c26.png" title=" Agree terms" width="1366"/>
+                <img src="7e4792aebf7c2ea41c1821940c81e8afc5b7c9f20526decda717b273d536beaa.png" title=" Agree terms (completed)" width="1366"/>
+                <img src="7e4792aebf7c2ea41c1821940c81e8afc5b7c9f20526decda717b273d536beaa.png" title=" Validate web goat tag" width="1366"/>
+                <img src="7e4792aebf7c2ea41c1821940c81e8afc5b7c9f20526decda717b273d536beaa.png" title=" Validate web goat tag (completed)" width="1366"/>
+                <img src="7e4792aebf7c2ea41c1821940c81e8afc5b7c9f20526decda717b273d536beaa.png" title=" When He registers correctly and he validates that he is already on the home page (completed)" width="1366"/>
+                <img src="95c2dcaa9d3d11924f40e5be70c8b21d3ec53ef9b704bbe16cbc451c4d992885.png" title=" And He goes to section five of the injection advanced section" width="1366"/>
+                <img src="95c2dcaa9d3d11924f40e5be70c8b21d3ec53ef9b704bbe16cbc451c4d992885.png" title=" Go to SQL injenction advanced" width="1366"/>
+                <img src="95c2dcaa9d3d11924f40e5be70c8b21d3ec53ef9b704bbe16cbc451c4d992885.png" title=" Go to section five" width="1366"/>
+                <img src="b71d63b7a685c912eec65ca304c2798fcfad071297a3c73c6bd71228d9099053.png" title=" Go to section five (completed)" width="1366"/>
+                <img src="b71d63b7a685c912eec65ca304c2798fcfad071297a3c73c6bd71228d9099053.png" title=" And He goes to section five of the injection advanced section (completed)" width="1366"/>
+                <img src="980e2ed914e11116ab21aba7e2434f9497a057c24196dc23a465deac70322488.png" title=" And He verifies that he is in the test login" width="1366"/>
+                <img src="980e2ed914e11116ab21aba7e2434f9497a057c24196dc23a465deac70322488.png" title=" Validate section SQL" width="1366"/>
+                <img src="a3b9c28c72a9a77ac612366ead96aee9407288ebfe9835b244e4f72f736f4ee8.png" title=" Validate section SQL (completed)" width="1366"/>
+                <img src="a3b9c28c72a9a77ac612366ead96aee9407288ebfe9835b244e4f72f736f4ee8.png" title=" And He verifies that he is in the test login (completed)" width="1366"/>
+                <img src="8056400435eda9bf7408eb2ab4a32727a2fc85ccfba73dcec2bc5b1b0810e766.png" title=" And He queries until he finds the key" width="1366"/>
+                <img src="8056400435eda9bf7408eb2ab4a32727a2fc85ccfba73dcec2bc5b1b0810e766.png" title=" Register clic" width="1366"/>
+                <img src="8056400435eda9bf7408eb2ab4a32727a2fc85ccfba73dcec2bc5b1b0810e766.png" title=" Query iteration" width="1366"/>
+                <img src="b6165a21351291a09551c8efbe8721d4941529f5dea1ff28095f2794ae83ea62.png" title=" Query iteration (completed)" width="1366"/>
+                <img src="b6165a21351291a09551c8efbe8721d4941529f5dea1ff28095f2794ae83ea62.png" title=" And He queries until he finds the key (completed)" width="1366"/>
+                <img src="6c1824e5fd2b3fefff173d71ef93e586544a8bb2f6b13a8d038323eb9540254f.png" title=" Then He verifies that he has successfully logged" width="1366"/>
+                <img src="6c1824e5fd2b3fefff173d71ef93e586544a8bb2f6b13a8d038323eb9540254f.png" title=" Validation login" width="1366"/>
+                <img src="6c1824e5fd2b3fefff173d71ef93e586544a8bb2f6b13a8d038323eb9540254f.png" title=" Then He verifies that he has successfully logged (completed): <span class='success-color'>SUCCESS</span>" width="1366"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.0.80</span>
+</div>
+</body>
+</html>
